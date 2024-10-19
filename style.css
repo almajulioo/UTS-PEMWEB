@@ -12,6 +12,9 @@ html {
 .mainright {
     background-image: url('image/stan.png');
 }
+.main-stan {
+    color: #9e0705 !important;
+}
 
 .main {
     display: flex;
@@ -25,7 +28,7 @@ html {
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 300px;
     background-color: #242526;
     padding-top: 20px;
 }
@@ -47,7 +50,7 @@ html {
 }
 
 .sidebar a:hover {
-    background-color: #48c8af;
+    background-color: #9e0705;
 }
 
 .sidebar .fa.fa-bars {
@@ -56,7 +59,7 @@ html {
 }
 
 .content {
-    margin-left: 250px;
+    margin-left: 300px;
     padding: 20px;
 }
 
@@ -126,7 +129,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #48c8af;
+    background-color: #9e0705;
     color: white;
     border: none;
     border-radius: 4px;
@@ -196,7 +199,7 @@ footer > p {
 
 @media screen and (max-width: 768px) {
     .sidebar {
-        left: -250px;
+        left: -300px;
         z-index: 1;
         font-size: 30px;
         transition: 0.5s;
