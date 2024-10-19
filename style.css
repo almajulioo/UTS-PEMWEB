@@ -184,6 +184,16 @@ table tr:hover {
     color: black;
 }
 
+footer {
+    color: white;
+}
+
+footer > p {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+}
+
 @media screen and (max-width: 768px) {
     .sidebar {
         left: -250px;
@@ -192,15 +202,8 @@ table tr:hover {
         transition: 0.5s;
     }
 
-    .container-fluid,
-    .row.main,
-    .mainright,
-    body,
-    html {
-        min-height: 100%;
-        min-width: 100%;
-        height: fit-content;
-        width: fit-content;
+    .sidebar .fa.fa-bars {
+        display: block;
     }
 
     .sidebar > h2 {
@@ -232,5 +235,16 @@ table tr:hover {
 
     .sidebar i {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .row.main,
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        height: fit-content;
+        width: fit-content;
     }
 }
