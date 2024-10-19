@@ -1,0 +1,235 @@
+.container-fluid,
+.row.main,
+.mainright,
+body,
+html {
+    background-color: #18191a;
+    height: 100%;
+    width: 100%;
+}
+
+.main,
+.mainright {
+    background-image: url('image/stan.png');
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #ccc;
+}
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    background-color: #242526;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #ccc;
+    padding-left: 15px;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-align: left;
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #48c8af;
+}
+
+.sidebar .fa.fa-bars {
+    font-size: 30px;
+    display: none;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.mainright {
+    min-height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-title,
+.form-title,
+.table-title {
+    font-size: 30px;
+}
+
+.form-title {
+    color: white;
+}
+
+.table-title {
+    color: #18191a;
+}
+
+.main-hr {
+    border: 2px #ccc solid;
+}
+
+.navbar {
+    display: none;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #48c8af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #305f72;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #242526;
+    color: #ccc;
+}
+table tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+table tr:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+        z-index: 1;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .container-fluid,
+    .row.main,
+    .mainright,
+    body,
+    html {
+        min-height: 100%;
+        min-width: 100%;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .sidebar > h2 {
+        display: none;
+    }
+
+    .sidebar > a,
+    .sidebar > a i {
+        font-size: 17px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+    .content {
+        margin: 0;
+    }
+
+    .container-fluid {
+        padding-right: 0;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        color: #ccc;
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .sidebar i {
+        display: block;
+    }
+}
