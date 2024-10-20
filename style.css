@@ -85,6 +85,11 @@ html {
     color: #18191a;
 }
 
+.table-header {
+    position: sticky;
+    top: 0;
+}
+
 .main-hr {
     border: 2px #ccc solid;
 }
