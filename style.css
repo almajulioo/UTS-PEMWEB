@@ -168,6 +168,10 @@ table {
     margin: 20px 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 table th,
 table td {
     border: 1px solid black;
